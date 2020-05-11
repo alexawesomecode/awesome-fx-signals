@@ -1,0 +1,113 @@
+.card-container {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+a {
+
+  text-decoration: none;
+}
+
+.input-container {
+  padding: 92px 10px 19px;
+}
+.App {
+  text-align: center;
+}
+input[type="radio"] {
+
+  transform: scale(1.5)
+
+}
+.div-trends  label {
+  
+  padding: 0px 6px;
+
+}
+
+
+.span-price {
+     
+      margin-top: -15px;
+      color: deep;
+      font-size: 16px;
+      color: deeppink;
+      font-weight: bold;
+      padding: 8px;
+}
+
+.card-item {
+
+  
+  display: flex;
+  flex-direction: column;
+  width: 301px;
+  /* height: 206px; */
+  background-color: yellow;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  margin: 10px 13px;
+  padding: 27px 0px;
+}
+
+.search-form-control {
+  position: relative;
+}
+
+.form-group {
+  margin: 0 auto;
+}
+.search-form-control .btn {
+margin: 10px;
+padding: 20px;
+}
+.form-control {
+
+width:555px;
+text-align:center;
+}
+.search-form-control .form-control {
+height: 3.5rem;
+box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+border: 1px solid #E7E7E7;
+}
+
+.search-form-control .form-control:focus {
+border: 1px solid #1EDD88;
+outline: none !important;
+box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+
+
+.btn-flat {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #1EDD88;
+  transition: background 0.3s ease;
+}
+
+.btn-flat:hover {
+  background: #1BCB7F;
+  color: white;
+}
+
+.btn-gradient {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: linear-gradient(#167FFB, #0F60C4);
+  transition: background 0.3s ease;
+  border: 1px solid #0F60C4;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(#147EFF, #0F67DA);
+  color: white;
+}
