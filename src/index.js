@@ -10,12 +10,7 @@ const store = createStore(reducer, { prices: [{ symbol: 'USDCAD', price: 1.2 }],
 
 /* eslint-disable no-multi-str */
 (async function setPrices() {
-  const url = 'https://fcsapi.com/api-v2/forex/latest?symbol=GBB/EUR,EUR/JPY,\
-USD/CAD,USD/JPY,EUR/USD,AUD/USD,AUD/JPY,\
-NZD/USD,NZD/JPY, NZD/EUR,USD/GBP, GBP/JPY,\
-GBP/AUD,GBP/NZD\
-GBP/USD,GBP/CAD,CAD/JPY&period=1h&\
-access_key=vNB8FiE2F9mlUEVMgI2QLEXJzVZPxRJmgIypksJaYZL1jARQ5U';
+  const url = 'https://fcsapi.com/api-v2/forex/latest?symbol=GBB/EUR,EUR/JPY,USD/CAD,USD/JPY,EUR/USD,AUD/USD,AUD/JPY,NZD/USD,NZD/JPY,NZD/EUR,USD/GBP,GBP/JPY,GBP/AUD,GBP/NZD,GBP/USD,GBP/CAD,CAD/JPY&period=1h&access_key=vNB8FiE2F9mlUEVMgI2QLEXJzVZPxRJmgIypksJaYZL1jARQ5U';
 
   fetch(url)
     .then(response => response.json())
