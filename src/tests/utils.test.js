@@ -21,6 +21,6 @@ test("expect when entering valid symbol return of valid route", () => {
 
     validSymbol = "EUR/USD"
 
-   expect(fixedRoute(validSymbol)).toBe('/details/eurusd')
+   expect(fixedRoute(validSymbol)).toBe('/details/eurusd    ')
 
 })
