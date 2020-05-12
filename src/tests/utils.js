@@ -15,7 +15,7 @@ const setFilters = (obj, nextFilters) => {
       }
     return undefined;
     }
-    return 'value not empty'
-}
+    return []
+  }
 
-export {fixedRoute, setFilters}
+  export {fixedRoute, setFilters}

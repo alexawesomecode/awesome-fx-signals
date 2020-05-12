@@ -21,6 +21,28 @@ test("expect when entering valid symbol return of valid route", () => {
 
     validSymbol = "EUR/USD"
 
-   expect(fixedRoute(validSymbol)).toBe('/details/eurusd    ')
+   expect(fixedRoute(validSymbol)).toBe('/details/eurusd')
 
 })
+
+
+test("return empty array when empty string is provided as params", () => {
+
+
+   expect(fixedRoute('')).toStrictEqual([])
+
+})
+
+
+
+test("set filters returns object", () => {
+
+
+    expect(typeof setFilters).toBe('function')
+ })
+
+test("set filters merges object to previous object and return new object", () => {
+
+
+    expect(setFilters({first: 'apples'}, {second: 'oranges'})).toStrictEqual({first: 'apples', second: 'oranges'})
+ })
