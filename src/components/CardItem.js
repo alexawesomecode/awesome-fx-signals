@@ -21,7 +21,7 @@ const CardItem = props => {
 
   useEffect(() => {
     (async function getIndicators() {
-      const url = `https://fcsapi.com/api-v2/forex/indicators?symbol=${symbol}&period=1h&access_key=G6X1HS6qFGy2Xq9s6R5PYOPnY0pgn4VZ8hOLKjpRfi8nZKckKA`;
+      const url = `https://fcsapi.com/api-v2/forex/indicators?symbol=${symbol}&period=1h&access_key=vNB8FiE2F9mlUEVMgI2QLEXJzVZPxRJmgIypksJaYZL1jARQ5U`;
       const response = await fetch(url);
       const data = await response.json();
       const indicators = await data.response.indicators;

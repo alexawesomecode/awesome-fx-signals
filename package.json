@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "a11y-react-emoji": "^1.1.2",
     "lodash": "^4.17.15",
@@ -15,6 +14,7 @@
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
+    "react-testing-library": "^8.0.1",
     "redux": "^4.0.5"
   },
   "scripts": {
@@ -44,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/react": "^9.5.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "json-loader": "^0.5.7"

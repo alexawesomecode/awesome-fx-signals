@@ -15,7 +15,7 @@ USD/CAD,USD/JPY,EUR/USD,AUD/USD,AUD/JPY,\
 NZD/USD,NZD/JPY, NZD/EUR,USD/GBP, GBP/JPY,\
 GBP/AUD,GBP/NZD\
 GBP/USD,GBP/CAD,CAD/JPY&period=1h&\
-access_key=G6X1HS6qFGy2Xq9s6R5PYOPnY0pgn4VZ8hOLKjpRfi8nZKckKA';
+access_key=vNB8FiE2F9mlUEVMgI2QLEXJzVZPxRJmgIypksJaYZL1jARQ5U';
 
   fetch(url)
     .then(response => response.json())
