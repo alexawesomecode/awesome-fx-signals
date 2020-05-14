@@ -28,7 +28,7 @@ const CardItem = props => {
       const result = normalize(indicators);
       setStats(result);
     }());
-  }, []);
+  }, [symbol]);
 
 
   return (
@@ -83,8 +83,11 @@ CardItem.propTypes = {
     path: PropTypes.string.isRequired,
   }),
   history: PropTypes.shape({ length: PropTypes.number.isRequired }),
+  /* eslint-disable no-dupe-keys */
   match: PropTypes.objectOf(PropTypes.object).isRequired,
   history: PropTypes.objectOf(PropTypes.object).isRequired,
+  /* eslint-enable no-dupe-keys */
+
 };
 
 

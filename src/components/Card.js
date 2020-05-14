@@ -27,9 +27,18 @@ const Card = ({ indicators }) => {
 };
 
 Card.propTypes = {
-
-    indicators: PropTypes.objectOf(PropTypes.object).isRequired,
-    indicators: PropTypes.shape({id: PropTypes.string.isRequired}),  
+  /* eslint-disable no-dupe-keys */
+  indicators: PropTypes.objectOf(PropTypes.object).isRequired,
+  indicators: PropTypes.shape(
+    {
+      id: PropTypes.string.isRequired,
+      change: PropTypes.string.isRequired,
+      chg_per: PropTypes.string.isRequired,
+      symbol: PropTypes.string.isRequired,
+      price: PropTypes.string.isRequired,
+    },
+  ).isRequired,
+  /* eslint-enable no-dupe-keys */
 
 
 };

@@ -56,11 +56,11 @@ const DisplayApp = props => {
 
 
 DisplayApp.propTypes = {
-
-    filters: PropTypes.objectOf(PropTypes.object).isRequired,
-    filters: PropTypes.shape({houruptrend: PropTypes.bool.isRequired}),  
-
-    prices: PropTypes.arrayOf(PropTypes.object).isRequired,
+  /* eslint-disable no-dupe-keys */
+  filters: PropTypes.objectOf(PropTypes.object).isRequired,
+  filters: PropTypes.shape({ houruptrend: PropTypes.bool.isRequired }).isRequired,
+  /* eslint-enable no-dupe-keys */
+  prices: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 

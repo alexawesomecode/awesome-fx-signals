@@ -39,6 +39,6 @@ const Topgainers = props => {
 
 Topgainers.propTypes = {
 
-  prices: PropTypes.arrayOf(PropTypes.array).isRequired,
+  prices: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 export default connect(mapStateToProps, null)(Topgainers);

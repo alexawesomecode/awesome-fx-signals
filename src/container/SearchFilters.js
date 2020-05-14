@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import symbols from '../helpers/symbols.js';
+import Filter from '../components/Filter';
 
 const mapStateToProps = state => ({ filters: state.filters });
 
@@ -71,41 +72,7 @@ const SearchFilters = props => {
           <input type="submit" className="btn btn-flat" value="SEARCH" />
         </div>
 
-        <div className="div-trends">
-          <div id="hourtrend">
-            <h2>HOURLY</h2>
-
-            <label htmlFor="hourtrend">
-              {' '}
-              uptrend
-              <input type="radio" value="Uptrend" name="hourtrend" id="houruptrend" onClick={handleClick} />
-            </label>
-
-            <label htmlFor="hourtrend">
-              {' '}
-              downtrend
-              <input type="radio" value="Downtrend" name="hourtrend" id="hourdowntrend" onClick={handleClick} />
-            </label>
-          </div>
-
-          <div id="daytrend">
-            <h2>DAILY</h2>
-
-            <label htmlFor="daytrend">
-              {' '}
-              uptrend
-              <input type="radio" value="Uptrend" name="daytrend" id="dayuptrend" onClick={handleClick} />
-            </label>
-
-            <label htmlFor="daytrend">
-              {' '}
-              downtrend
-              <input type="radio" value="Downtrend" name="daytrend" id="daydowntrend" onClick={handleClick} />
-            </label>
-
-          </div>
-
-        </div>
+        <Filter handleClick={handleClick} />
 
       </form>
     </div>
@@ -115,8 +82,20 @@ const SearchFilters = props => {
 SearchFilters.propTypes = {
 
 
-  filters: PropTypes.shape({houruptrend: PropTypes.bool.isRequired}),  
+  filters: PropTypes.shape({ houruptrend: PropTypes.bool.isRequired }).isRequired,
   sendFiltered: PropTypes.func.isRequired,
+  match: PropTypes.shape(
+    {
+      params: PropTypes.object.isRequired,
+
+    },
+  ).isRequired,
+  history: PropTypes.shape(
+    {
+      push: PropTypes.func.isRequired,
+
+    },
+  ).isRequired,
 
 };
 
