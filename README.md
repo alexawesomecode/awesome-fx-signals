@@ -19,7 +19,7 @@
   </h3>
 
   <h3 align="center">
-	 Live Version link - 
+	 Live Version link - http://ec2-35-182-98-119.ca-central-1.compute.amazonaws.com:3000/
   </h3>
 
  

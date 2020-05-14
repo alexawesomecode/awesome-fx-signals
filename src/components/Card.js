@@ -28,7 +28,9 @@ const Card = ({ indicators }) => {
 
 Card.propTypes = {
 
-  indicators: PropTypes.objectOf(PropTypes.object).isRequired,
+    indicators: PropTypes.objectOf(PropTypes.object).isRequired,
+    indicators: PropTypes.shape({id: PropTypes.string.isRequired}),  
+
 
 };
 

@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import DisplayApp from '../components/DisplayApp';
+import DisplayApp from './DisplayApp';
 
 const mapStateToProps = state => ({
  filters: state.filters, prices: state.prices,
