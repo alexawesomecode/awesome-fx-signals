@@ -26,3 +26,31 @@ test("render right list of indicators", () => {
 
 })
 
+test("Start rendering from local state", () => {
+
+    
+    const Click = () => jest.fn();
+    const match = { params: {id: 'eurusd', path: 'details'}}
+    
+    const { getByText } = render(<CardItem handleClick={Click} match={match}> </CardItem>)
+    
+    expect(getByText('Analyzing...')).toBeInTheDocument()
+
+
+})
+
+
+  
+test("click on button works", () => {
+
+
+    const Click = () => jest.fn();
+    const match = { params: {id: 'eurusd', path: 'details'}}
+
+    const { getByText } = render(<CardItem handleClick={Click} match={match}> </CardItem>)
+
+    const node = getByText("GO BACK");
+    fireEvent.click(node);  
+  });
+  
+  

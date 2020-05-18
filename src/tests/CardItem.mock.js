@@ -79,7 +79,7 @@ class CardItem extends React.Component {
             {indicators.williamsR}
           </span>
         </div>
-        <button type="button" className={appstyles.goback} onClick={() => this.props.history.push('/')}>GO BACK</button>
+        <button type="button" className={appstyles.goback} onClick={() => 'push.history.back'}>GO BACK</button>
 
       </div>
 
