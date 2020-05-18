@@ -21,3 +21,18 @@ test("clicking radio button fires handle function", () => {
     expect(Click).toHaveBeenCalled;
 
 })
+
+
+test("clicking radio button fires handle function", () => {
+
+    let labelElements;
+    const Click = () => jest.fn();
+    render(<Filter handleClick={Click}> </Filter>)
+
+    labelElements = screen.getAllByText('downtrend')
+    expect(labelElements.length).toBe(2);
+
+    labelElements = screen.getAllByText('uptrend')
+    expect(labelElements.length).toBe(2);
+
+})
