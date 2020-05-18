@@ -104,7 +104,7 @@ CardItem.propTypes = {
   history: PropTypes.objectOf(PropTypes.any).isRequired,
   history: PropTypes.shape({
     length: PropTypes.number.isRequired,
-    push: PropTypes.objectOf(PropTypes.any).isRequired,
+    push: PropTypes.func.isRequired,
   }),
   /* eslint-enable no-dupe-keys */
 
