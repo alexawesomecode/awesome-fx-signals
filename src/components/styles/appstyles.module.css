@@ -1,0 +1,69 @@
+.navbar {
+ position: absolute;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  width: 100%;
+  align-items: center;
+  padding: 1px 15px;
+  color: snow important!;
+
+}
+.white{
+    color:snow;
+}
+
+
+
+.card_indicators {
+
+    width: 80%;
+    padding-top:90px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 22px;
+    padding-top: 75px;
+
+
+}
+
+.card_indicators_details {
+
+  display:flex;
+  flex-direction:column;
+  
+  margin: 33px;
+  background-color: floralwhite;
+}
+
+.card-indicators h2 {
+
+  display: inline;
+  padding: 11px;
+  background-color: yellow;
+}
+.card-indicators h1 {
+
+  font-size:30px;
+}
+
+.card-indicators-details h3 {
+
+  display: inline;
+}
+
+.card-indicators-details span {
+
+  margin: 17px 2px;
+}
+
+.goback {
+
+    border:none;
+    padding:15px;
+    background-color: black;
+    color: white;
+}

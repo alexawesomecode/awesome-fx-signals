@@ -1,0 +1,14 @@
+.container_search {
+
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.loading {
+
+    font-size:25px;
+    text-align:center;
+    font-weight: bold;
+}

@@ -1,0 +1,27 @@
+.container_top {
+
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.container_elem {
+
+    background-color: whitesmoke;
+    justify-content: space-evenly;
+    
+    padding: 17px;
+    margin: 23px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.container_elem:first-child {
+
+    padding-top: 100px;
+}
+.container_elem h2 {
+
+    display: inline-flex;
+}
