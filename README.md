@@ -65,8 +65,6 @@ Lastly, you can also filter all the symbols by 'top gainers', these are the ones
 
 
 
-![leaderboard](assets/leaderboard.png)
-
 
 # Validations
 
@@ -77,6 +75,12 @@ Lastly, you can also filter all the symbols by 'top gainers', these are the ones
 Download or clone this [repo here](https://github.com/alexawesomecode/awesome-fx-signals), enter the main folder and do `npm install` followed by `npm start`. 
 
 The you go to http://localhost:3000
+
+# Future Features
+
+* Ability to filter by 5min and 4hour
+* See charts of every Pair
+* Filter by specific technical analysis
 
 
 # Built With
