@@ -15,7 +15,7 @@
   </a>
 
   <h3 align="center">
-    A Capstone project from the  Microverse React-Redux Curriculum
+	Awesome FX Signals
   </h3>
 
   <h3 align="center">
@@ -27,27 +27,26 @@
   </p>
 </p>
 
-## Project 'Awesome Forex Signals'
+## Project 
 
-This apps allows you to see the lastest prices of some forex pairs. You can filter them by uptrend and downtrend, daily and hourly. You can mix both options and get more specific options. So if you have a symbol that is performing positive daily and also hourly, you can catch that movement easily with filters.
+This apps allows you to get the lastest prices of forex pairs and get a detailed technical analysis summary. You can filter them by uptrend and downtrend, daily and hourly. You can mix both options and get more specific options. So if you have a symbol that is performing positive daily and also hourly, you can catch that movement easily with filters.
 
 You can also get more information of a symbol by clicking on it, or by searching by name, and with so you get a detailed technical analysis of that pair and also a final summary if its okay or not to buy or sell.
 
-For API calls this project is using [FCSAPI](www.fcsapi.com)
+For the API calls this project is using [FCSAPI](www.fcsapi.com)
 
 
-![game](assets/game.png)
 
 
 ## Design
 
-This project was built using React and Redux for state managment. And also it uses with cautious some calls an external API. As the API limit is only 3 calls per minutes I had to optimize the app for that.
+This project was built using React and Redux for state managment. And also does calls to  an external API. As the API limit is only 3 calls per minutes I had to optimize the app for that.
 
 The first time you go to the mainpage, the app perfoms one API call to get all the prices for a specific and predefined lists of symbols. It stores them in the Redux store for later use.
 
 ![main](assets/main.png)
 
-You can use filters to get a filtered rendering of symbols, if they are uptrending or not, for example. This only perfoms Redux actions and it doesnt call the API. 
+You can use filters to get a filtered list of symbols, if they are uptrending or not, for example. This only perfoms Redux actions and it doesnt call the API. 
 
 ![gameover](assets/tags.png)
 
@@ -61,8 +60,6 @@ Lastly, you can also filter all the symbols by 'top gainers', these are the ones
 
 
 ![gameover](assets/topgainers.png)
-
-
 
 
 
