@@ -35,6 +35,8 @@ You can also get more information of a symbol by clicking on it, or by searching
 
 For the API calls this project is using [FCSAPI](www.fcsapi.com)
 
+API exhausted from to many calls.
+
 
 
 
